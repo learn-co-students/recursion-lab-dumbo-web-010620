@@ -17,3 +17,7 @@ function reverseString(myString){
     }
 }
 
+function isPalindrome(myString){
+    let l = myString.length
+    return myString == myString.split('').reverse().join('');
+}
