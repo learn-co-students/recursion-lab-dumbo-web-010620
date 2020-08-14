@@ -8,5 +8,12 @@ function printString(myString){
         return true;
     }
 }
-printString("pizza")
+
+function reverseString(myString){
+    if(myString.length < 2){
+        return myString;
+    } else {
+        return reverseString(myString.substring(1)) + myString[0];
+    }
+}
 
